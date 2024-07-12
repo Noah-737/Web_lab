@@ -1,0 +1,25 @@
+<!--I.	Develop and demonstrate JavaScript with POP-UP boxes and functions for the following problem:
+Input: A number n obtained using prompt 
+Output: Factorial of n number using alert
+
+Get the number n from the user-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function func(n)
+    {
+        if(n===0 || n===1)
+        return 1;
+    return func(n-1)*n;
+    }
+    let n=prompt("enter a numeber")
+    alert(func(n));
+   </script>
+</body>
+</html>
